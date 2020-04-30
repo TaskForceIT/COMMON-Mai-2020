@@ -1,0 +1,36 @@
+{
+  "name": "profoundjs-deployment",
+  "version": "1.0.0",
+  "description": "Profound.js Deployment",
+  "keywords": [
+    "profound",
+    "profoundjs",
+    "pjs",
+    "profound logic",
+    "profoundlogic",
+    "profound ui",
+    "profoundui"
+  ],
+  "engines": {
+    "node": ">=8"
+  },
+  "dependencies": {
+    "node-isbn": "^1.4.0",
+    "profoundjs": "^4.15.0",
+    "idb-connector": "1.2.0",
+    "profoundjs-node-pty": "^1.0.5"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "start": "node start.js"
+  },
+  "homepage": "http://profoundjs.com/",
+  "license": "SEE LICENSE IN LICENSE.txt",
+  "private": true,
+  "optionalDependencies": {
+    "idb-connector": "1.2.0",
+    "profoundjs-node-pty": "^1.0.5"
+  },
+  "main": "index.js",
+  "author": ""
+}

@@ -1,0 +1,11 @@
+{ "text": "", "formats": [{
+  "screen": { "record format name": "screen1" },
+  "items": [
+    { "id": "Layout1", "field type": "layout", "left": "150px", "top": "20px", "template": "css panel", "header text": "Connect to IBM-I", "header theme": "B - Blue", "body theme": "C - Gray", "height": "385px", "width": "660px", "z index": "8" }, 
+    { "id": "TextArea0", "field type": "text area", "css class": "input", "value": { "fieldName": "commandText", "dataLength": "100", "trimLeading": "false", "trimTrailing": "true", "blankFill": "false", "rjZeroFill": "false", "dataType": "varchar", "formatting": "Text", "textTransform": "none", "designValue": "[commandText]" }, "left": "35px", "top": "25px", "width": "590px", "height": "95px", "layout": "Layout1", "container": "1" }, 
+    { "id": "Button1", "field type": "button", "css class": "button", "value": "SQL-Query", "left": "35px", "top": "135px", "width": "130px", "height": "40px", "response": { "fieldName": "query", "customTrue": "", "customFalse": "", "dataType": "indicator", "formatting": "Indicator", "indFormat": "1 / 0" }, "layout": "Layout1", "container": "1" }, 
+    { "id": "Button2", "field type": "button", "css class": "button", "value": "Command", "left": "265px", "top": "135px", "width": "130px", "height": "40px", "response": { "fieldName": "command", "customTrue": "", "customFalse": "", "dataType": "indicator", "formatting": "Indicator", "indFormat": "1 / 0" }, "layout": "Layout1", "container": "1" }, 
+    { "id": "Button3", "field type": "button", "css class": "button", "value": "Fibonacci", "left": "495px", "top": "135px", "width": "130px", "height": "40px", "response": { "fieldName": "program", "customTrue": "", "customFalse": "", "dataType": "indicator", "formatting": "Indicator", "indFormat": "1 / 0" }, "layout": "Layout1", "container": "1" }, 
+    { "id": "TextArea1", "field type": "text area", "value": { "fieldName": "responseText", "dataLength": "512", "trimLeading": "false", "trimTrailing": "true", "blankFill": "false", "rjZeroFill": "false", "dataType": "varchar", "formatting": "Text", "textTransform": "none", "designValue": "[responseText]" }, "left": "35px", "top": "185px", "width": "590px", "height": "140px", "layout": "Layout1", "container": "1" }
+  ]
+}], "keywords": [], "long name aliases": true }
