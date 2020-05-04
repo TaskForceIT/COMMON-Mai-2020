@@ -1,4 +1,5 @@
-POW3R 2020 Common Beitrag:
+![Node.Js](/Images/POW3R.png)  
+Common Beitrag:  
 Hybrid-Cloud-Lösung mit RPG, Node.js und NodeRun.com
 
 ![Node.Js](/Images/NodeJS.svg)  
