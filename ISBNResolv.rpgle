@@ -12,17 +12,12 @@ Dcl-F Dialog Workstn
              Extfile(*Extdesc);
 
 Dcl-Pr NODERUN EXTPGM;
-  benutzer CHAR(50);
+  benutzer CHAR(51);
   wrkspace CHAR(75);
   token CHAR(75) const;
   isbn  CHAR(50);
   titel char(1024);
-End-Pr;
-
-Dcl-Pr ADDITION EXTPGM;
-  ersterSummand zoned(12:2) const;
-  zweiterSummand zoned(12:2) const;
-  ergebnis zoned(13:2);
+  autor char(1024);
 End-Pr;
 
 Dcl-pr ISBN EXTPGM;
@@ -32,12 +27,11 @@ Dcl-pr ISBN EXTPGM;
 END-PR;
 
 
-
 Dcl-Proc Main;
   Dcl-Pi *N Extpgm('ISBNRESOLV');
   End-Pi;
 
-  Dcl-s benutzer CHAR(50) INZ('KerimG');
+  Dcl-s benutzer CHAR(51) INZ('KerimG');
   Dcl-s workspace CHAR(75) INZ('isbn-lookup');
 
 
@@ -45,9 +39,17 @@ Dcl-Proc Main;
   initialize();
 
   DoU ende = '1';
-    ISBN(isbnnr:buchTitel:autor);
+
 
     exfmt START;
+
+    If local = '1';
+      ISBN(isbnnr:buchTitel:autor);
+    Else;
+       NODERUN(benutzer:workspace:'*NONE':isbnnr:buchTitel:autor);
+    EndIf;
+
+
 
   EndDo;
 
@@ -60,6 +62,7 @@ Dcl-Proc initialize;
   isbnnr = '';
   buchTitel = '';
   autor = '';
+  local = *off;
 
 End-Proc;
 
